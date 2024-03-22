@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="home.js" defer></script>
 </head>
 
 <style>
@@ -87,7 +88,6 @@ html{
     .col-12 {width: 100%;}
 }
 </style>
-</head>
 <body>
 
 <center>
@@ -103,7 +103,7 @@ html{
         <h3>Search</h3>
         <div style="display: flex; position: relative;">
             <textarea placeholder="Search..." id="search" class="inputform" style="background-color: #0000;height: 2rem; width: 100%; margin-top: 1rem;"></textarea>
-            <button style="height: 1.5rem; position: absolute; bottom: 0; right: 0;" >Search</button>
+            <button style="height: 1.5rem; position: absolute; bottom: 0; right: 0;" onclick="validationForm()">Search</button>
         </div>
         <h3><a href="profile.html">Profile </a></h3>
         <h3><a href="index.html">Log-out </a></h3>
