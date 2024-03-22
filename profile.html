@@ -9,12 +9,6 @@
     box-sizing: border-box;
 }
 
-.row: :after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -104,15 +98,15 @@ html{
 </center>
 
 <div class="header">
-    <div style="display:flex;">
-        <h3 style="margin-right: 5rem;margin-left: 15rem;"><a href="home.html">Home </a></h3>
-        <h3 style="margin-right: 0.5rem;margin-left: 5rem;">Search</h3>
+    <div style="display:flex; justify-content: space-evenly;">
+        <h3><a href="home.html">Home </a></h3>
+        <h3>Search</h3>
         <div style="display: flex; position: relative;">
             <textarea placeholder="Search..." style="background-color: #0000;height: 2rem; width: 100%; margin-top: 1rem;"></textarea>
             <button style="height: 1.5rem; position: absolute; bottom: 0; right: 0;" >Search</button>
         </div>
-        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="profile.html">Profile </a></h3>
-        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="index.html">Log-out </a></h3>
+        <h3><a href="profile.html">Profile </a></h3>
+        <h3><a href="index.html">Log-out </a></h3>
     </div>
 </div>
 
@@ -160,12 +154,15 @@ html{
             </div> 
         </div>
         <div style="display:flex;">
-            <p style="margin-left: 5rem; margin-right: 10rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">5</p>
+            <div>
+                <p style="font-weight: bold;">5</p>
+                <p>Posts</p>
+
+            </div>
             <p style="margin-left: 2rem; margin-right: 10rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">1,4M</p>
             <p style="margin-left: 2rem; margin-right: 2rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">3</p>
         </div>
         <div style="display:flex;">
-            <p style="margin-left: 4rem; margin-right: 8.5rem; margin-top: 0.5rem;">Posts</p>
             <p style="margin-left: 2rem; margin-right: 7rem; margin-top: 0.5rem;">Followers</p>
             <p style="margin-left: 2rem; margin-right: 2rem; margin-top: 0.5rem;">Following</p>
         </div>
