@@ -1,11 +1,12 @@
 function validateForm() {
-    var search = document.getElementById("search").value;
+    var post = document.getElementById("post").previousElementSibling.value; // Get the value of the textarea preceding the button
 
-    if (search.trim() === '') {
-        alert('Please enter a search query!');
+    if (post.trim() === '') {
+        alert('Please write a post!');
         return false; // Prevent form submission
     } else {
-        alert('Searching...');
-        return true; // Allow form submission
+        alert('Posting...');
     }
+
+    return true; // Allow form submission if both validations pass
 }
