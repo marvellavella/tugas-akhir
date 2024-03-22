@@ -3,8 +3,7 @@
         <head>
             <title>Login</title>
             <script src="register.js" defer></script>
-        </head>
-
+    </head>
 	<body style="background-color: #ecb186;">
 	<style>
     .inputform {
@@ -31,7 +30,7 @@
 	
     <body>
         <div>
-            <form method="get" action="home.html" onsubmit="validateForm()">
+            <form method="get" action="home.html" onsubmit="return validateForm()">
 	<form>
     <h1>Register</h1>
         <label for="firstname">First name:</label><br>
@@ -52,7 +51,7 @@
         
     <p>
         <label>Gender:</label>
-        <select id="Gender">
+        <select id="gender">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
@@ -68,8 +67,8 @@
    </form>
    <p></p>
    <form method="get" action="home.html">
-        <label for="phone number">Phone number:</label><br>
-        <input type="phone number" name="phone number" class="inputform"><br>
+        <label for="number">Phone number:</label><br>
+        <input type="number" name="number" class="inputform"><br>
   
         <label for="username">Username:</label><br>
         <input type="text" name="username" class="inputform"><br>
@@ -79,8 +78,8 @@
         <label for="password">Password:</label><br>
         <input type="text" name="password" placeholder="minimum 8 characters" class="inputform"><br>
     
-        <label for="confirm password">Confirm Password:</label><br>
-        <input type="text" name="confirm password" placeholder="minimum 8 characters" class="inputform"><br>
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="text" name="confirm" placeholder="minimum 8 characters" class="inputform"><br>
     
     <p></p>
         <button onclick="validateForm()">Register</button>
