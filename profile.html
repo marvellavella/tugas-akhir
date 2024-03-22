@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+
+.row: :after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html{
+    font-family: "times new roman", sans-serif;
+}
+
+.header {
+    background-color: #ecb186;
+    color: black;
+    padding: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #ffcda9;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #ecb186;
+}
+
+.aside {
+    background-color: #ffcda9;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="flex">
+    <div style="width: 12rem; height: 9rem; background-image: url(./logo\ fix.png); background-size: cover; margin-top: 1rem; margin-bottom: 0rem;"></div>
+    <h1 style="font-style: italic; font-size: 50px;; font-weight: bold; margin-top: .5rem;">ChetChat</h1>
+</div>
+</center>
+
+<div class="header">
+    <div style="display:flex;">
+        <h3 style="margin-right: 5rem;margin-left: 15rem;"><a href="home.html">Home </a></h3>
+        <h3 style="margin-right: 0.5rem;margin-left: 5rem;">Search</h3>
+        <div style="display: flex; position: relative;">
+            <textarea placeholder="Search..." style="background-color: #0000;height: 2rem; width: 100%; margin-top: 1rem;"></textarea>
+            <button style="height: 1.5rem; position: absolute; bottom: 0; right: 0;" >Search</button>
+        </div>
+        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="profile.html">Profile </a></h3>
+        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="login.html">Log-out </a></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+        <div class="aside">
+            <h2 style="margin-top: auto;">Total Activity</h2>
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <p style="margin: auto; font-weight:100;">Likes: 1.000</p>
+                        <p style="margin: auto; font-weight:100;">Comments: 500</p>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 1rem; width: 1rem;"></div>
+
+        <div class="aside">
+            <h2 style="margin-top: auto">Post</h2>
+            <div style="background-color: #ffcda9;">
+                <div style="display:-webkit-inline-box">
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://racer.com/wp-content/uploads/sites/85/2024/03/1020052898-LAT-20240309-GP2402_145900_V6A3857.jpg); background-size: cover; margin: .5rem;"></div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.kilburntimes.co.uk/resources/images/17840459/?type=responsive-gallery-fullscreen); background-size: cover; margin: .5rem;"></div>           
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2024/03/08135949/oliver-bearman-ferrari-debut-1.jpg); background-size: cover; margin: .5rem;"></div>
+                </div>
+                <div style="display:-webkit-inline-box">
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://ichef.bbci.co.uk/news/1024/cpsprodpb/0ABB/production/_132874720_gettyimages-2068310336.jpg); background-size: cover; margin: .5rem;"></div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc78e97b3-6794-4994-bda6-f67908878924.jpg?crop=1600%2C900%2C0%2C0&resize=1200); background-size: cover; margin: .5rem;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="col-6 col-s-9">
+    <div style="background-color: #ffcda9;">
+        <div style="display:flex;">
+            <div>
+                <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size: cover; margin: .5rem;"></div>                
+            </div> 
+            <div>
+                <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                <p style="font-weight:100; margin-top: .2rem;">@ollie</p>
+            </div> 
+        </div>
+        <div style="display:flex;">
+            <p style="margin-left: 5rem; margin-right: 10rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">5</p>
+            <p style="margin-left: 2rem; margin-right: 10rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">1,4M</p>
+            <p style="margin-left: 2rem; margin-right: 2rem; margin-top: 0.2rem; margin-bottom: 0rem; font-weight: bold;">3</p>
+        </div>
+        <div style="display:flex;">
+            <p style="margin-left: 4rem; margin-right: 8.5rem; margin-top: 0.5rem;">Posts</p>
+            <p style="margin-left: 2rem; margin-right: 7rem; margin-top: 0.5rem;">Followers</p>
+            <p style="margin-left: 2rem; margin-right: 2rem; margin-top: 0.5rem;">Following</p>
+        </div>
+    </div>
+
+    <div style="height: 1rem; width: 1rem;"></div>
+
+    <h1 style="margin-top: 2rem;"><center>My Posts</center></h1>
+        
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size: cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                    <p style="font-weight:100; margin-top: .2rem;">Published: March 19, 2024</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://racer.com/wp-content/uploads/sites/85/2024/03/1020052898-LAT-20240309-GP2402_145900_V6A3857.jpg" width="100%">
+                <p style="margin-top: .1rem;">with charles</p>
+            </div>
+        </div>
+    
+        <div style="height: 1rem; width: 1rem;"></div>
+    
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size:cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                    <p style="font-weight:100; margin-top: .2rem;">Published: March 18, 2024</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.kilburntimes.co.uk/resources/images/17840459/?type=responsive-gallery-fullscreen" style="width: 100%;">
+                <p style="margin-top: .1rem;">ready for racing</p>
+            </div>
+        </div>
+            
+        <div style="height: 1rem; width: 1rem;"></div>
+    
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size:cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                    <p style="font-weight:100; margin-top: .2rem;">Published: March 17, 2024</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2024/03/08135949/oliver-bearman-ferrari-debut-1.jpg" style="width: 100%;">
+                <!-- <div style="background-image: url(./anjing.jpg); background-size:contain ;width: 100%; height: 15rem;"> -->
+                <p style="margin-top: .1rem;">Saudi Arabian GP</p>
+            </div>
+        </div>
+        
+        <div style="height: 1rem; width: 1rem;"></div>
+    
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size:cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                    <p style="font-weight:100; margin-top: .2rem;">Published: March 16, 2024</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/0ABB/production/_132874720_gettyimages-2068310336.jpg" style="width: 100%;">
+                <!-- <div style="background-image: url(./anjing.jpg); background-size:contain ;width: 100%; height: 15rem;"> -->
+                <p style="margin-top: .1rem;">blue f1 helmet</p>
+            </div>
+        </div>
+    
+        <div style="height: 1rem; width: 1rem;"></div>
+    
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size:cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Oliver Bearman</p>
+                    <p style="font-weight:100; margin-top: .2rem;">Published: March 15, 2024</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc78e97b3-6794-4994-bda6-f67908878924.jpg?crop=1600%2C900%2C0%2C0&resize=1200" style="width: 100%;">
+                <!-- <div style="background-image: url(./anjing.jpg); background-size:contain ;width: 100%; height: 15rem;"> -->
+                <p style="margin-top: .1rem;">my f1 debut</p>
+            </div>
+        </div>
+    </div>
+
+<div class="col-3 col-s-12">
+    <div class="aside">
+        <h2 style="margin-top: auto;">Mutual Friends</h2>
+        <div style="background-color: #ffcda9;">
+            <div style="display:flex;">
+                <div>
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://cdn01.justjared.com/wp-content/uploads/2024/01/charles-ferrari/charles-leclerc-extends-ferrari-contract-05.jpg); background-size: cover; margin: .5rem;"></div>                
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Charles Leclerc</p>
+                    <p style="font-weight:100; margin-top: .2rem;">@leclerc</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div>    
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.si.com/.image/t_share/MTk4Mjg3MjAwNDEwOTM2ODc4/d15fafcb-ffbb-433c-9f35-11fe0dd6e33c.jpg); background-size: cover; margin: .5rem;"></div>                  
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Carlos Sainz</p>
+                    <p style="font-weight:100; margin-top: .2rem;">@carlos</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div>    
+                    <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://mclaren.bloomreach.io/cdn-cgi/image/width=1024,quality=80,format=webp/delivery/resources/content/gallery/mclaren-racing/formula-1/2024/editorial/lando-norris/lando-contract/lando-hero-2024-contract-test-portrait.jpg); background-size: cover; margin: .5rem;"></div>                  
+                </div>
+                <div>
+                    <p style="font-weight: bolder; margin-bottom: .2rem;">Lando Norris</p>
+                    <p style="font-weight:100; margin-top: .2rem;">@lando</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html{
+    font-family: "times new roman", sans-serif;
+}
+
+.header {
+    background-color: #ecb186;
+    color: black;
+    padding: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #ffcda9;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #ecb186;
+}
+
+.aside {
+    background-color: #ffcda9;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<center>
+    <div class="flex">
+        <div style="width: 12rem; height: 9rem; background-image: url(./logo\ fix.png); background-size: cover; margin-top: 1rem; margin-bottom: 0rem;"></div>
+        <h1 style="font-style: italic; font-size: 50px;; font-weight: bold; margin-top: .5rem;">ChetChat</h1>
+</div>
+</center>
+
+<div class="header">
+    <div style="display:flex;">
+        <h3 style="margin-right: 5rem;margin-left: 15rem;"><a href="home.html">Home </a></h3>
+        <h3 style="margin-right: 0.5rem;margin-left: 5rem;">Search</h3>
+        <div style="display: flex; position: relative;">
+            <textarea placeholder="Search..." style="background-color: #0000;height: 2rem; width: 100%; margin-top: 1rem;"></textarea>
+            <button style="height: 1.5rem; position: absolute; bottom: 0; right: 0;" >Search</button>
+        </div>
+        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="profile.html">Profile </a></h3>
+        <h3 style="margin-right: 5rem;margin-left: 5rem;"><a href="login.html">Log-out </a></h3>
+    </div>
+</div>
+
+<div style="display: flex;">
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <h2 style="margin-top: auto;"><center>Shortcuts</center></h2>
+            <ul>
+                <li><a href="feeds.html">Feeds</a></li>
+                <li><a href="profile.html">My Friends</a></li>
+                <li>Saved Posts</li>
+                <li>Messages</li>
+                <li>Create</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-6 col-s-10">
+        <h1 style="margin-top: 0rem;"><center>Feeds</center></h1>
+            <div class="aside">
+                <div style="background-color: #ffcda9;">
+                    <h3 style="margin-top: 0rem; margin-bottom: 0.5rem;">Friends</h3>
+                    <div style="display:-webkit-inline-box">
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://cdn01.justjared.com/wp-content/uploads/2024/01/charles-ferrari/charles-leclerc-extends-ferrari-contract-05.jpg); background-size: cover; margin: .5rem;"></div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.si.com/.image/t_share/MTk4Mjg3MjAwNDEwOTM2ODc4/d15fafcb-ffbb-433c-9f35-11fe0dd6e33c.jpg); background-size: cover; margin: .5rem;"></div>           
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://mclaren.bloomreach.io/cdn-cgi/image/width=1024,quality=80,format=webp/delivery/resources/content/gallery/mclaren-racing/formula-1/2024/editorial/lando-norris/lando-contract/lando-hero-2024-contract-test-portrait.jpg); background-size: cover; margin: .5rem;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-s-9">
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://cdn01.justjared.com/wp-content/uploads/2024/01/charles-ferrari/charles-leclerc-extends-ferrari-contract-05.jpg); background-size: cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Charles Leclerc</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 16, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/ETGfX4_U0AA3pPJ.jpg:large" width="100%">
+                    <p style="margin-top: .1rem;">Today was more about swimming than surfing but it was very fun ! 😅</p>
+                </div>
+            </div>
+        
+            <div style="height: 1rem; width: 1rem;"></div>
+        
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.si.com/.image/t_share/MTk4Mjg3MjAwNDEwOTM2ODc4/d15fafcb-ffbb-433c-9f35-11fe0dd6e33c.jpg); background-size:cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Carlos Sainz</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 12, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://static.tnn.in/thumb/msid-108354674,thumbsize-63750,width-1280,height-720,resizemode-75/108354674.jpg" style="width: 100%;">
+                    <p style="margin-top: .1rem;">SAINZ 2️⃣ - APPENDICITIS 0️⃣</p>
+                </div>
+            </div>
+                
+            <div style="height: 1rem; width: 1rem;"></div>
+        
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://mclaren.bloomreach.io/cdn-cgi/image/width=1024,quality=80,format=webp/delivery/resources/content/gallery/mclaren-racing/formula-1/2024/editorial/lando-norris/lando-contract/lando-hero-2024-contract-test-portrait.jpg); background-size:cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Lando Norris</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 10, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i2.wp.com/f1i.com/wp-content/uploads/2024/03/potd-norris-melbourne.jpg" style="width: 100%;">
+                    <p style="margin-top: .1rem;">💜🤍💙🩵❤</p>
+                </div>
+            </div>
+            
+            <div style="height: 1rem; width: 1rem;"></div>
+        
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://cdn01.justjared.com/wp-content/uploads/2024/01/charles-ferrari/charles-leclerc-extends-ferrari-contract-05.jpg); background-size: cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Charles Leclerc</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 7, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/originals/4e/ae/c4/4eaec4a18e0ffecd6abe3089cae3afdc.jpg" width="100%">
+                    <p style="margin-top: .1rem;">Golff</p>
+                </div>
+            </div>
+        
+            <div style="height: 1rem; width: 1rem;"></div>
+        
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://www.si.com/.image/t_share/MTk4Mjg3MjAwNDEwOTM2ODc4/d15fafcb-ffbb-433c-9f35-11fe0dd6e33c.jpg); background-size:cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Carlos Sainz</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 6, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/GH7F38PbwAAt_b6?format=jpg&name=large" style="width: 100%;">
+                    <p style="margin-top: .1rem;">Quick recharge in Al-Ula. Ready for another week of racing!</p>
+                </div>
+            </div>
+
+            <div style="height: 1rem; width: 1rem;"></div>
+        
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://mclaren.bloomreach.io/cdn-cgi/image/width=1024,quality=80,format=webp/delivery/resources/content/gallery/mclaren-racing/formula-1/2024/editorial/lando-norris/lando-contract/lando-hero-2024-contract-test-portrait.jpg); background-size:cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="font-weight: bolder; margin-bottom: .2rem;">Lando Norris</p>
+                        <p style="font-weight:100; margin-top: .2rem;">Published: March 1, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/GEirix2XwAAIYJ2.jpg" style="width: 100%;">
+                    <p style="margin-top: .1rem;">Ice spice</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3 col-s-12">
+            <h2 style="margin-top: 0rem;"><center>Your Page</center></h2>
+            <div style="background-color: #ffcda9;">
+                <div style="display:flex;">
+                    <div>
+                        <div style="width: 3rem; height: 3rem; border-radius: 100%; background-image: url(https://pbs.twimg.com/media/GGzIIGQaAAA1kvZ?format=jpg&name=4096x4096); background-size: cover; margin: .5rem;"></div>                
+                    </div>
+                    <div>
+                        <p style="margin-top: .5rem; margin-bottom: .1rem; font-weight: bolder;">Oliver Bearman</p>
+                        <p style="margin-top: 0rem; margin-bottom: .1rem; font-weight:100;">Friends</p>
+                        <p style="margin-top: 0rem; font-weight:100;">Notifications</p>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
