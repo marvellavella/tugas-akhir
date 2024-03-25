@@ -6,9 +6,9 @@ function validateForm() {
     var gender = document.getElementById("gender").value;
     var address = document.getElementById("address").value;
     var file = document.getElementById("filetoupload").files[0];
-    var number = document.getElementById("number").value;
+    var number = document.getElementById("number").value; // Changed from phoneNumber to number
     var password = document.getElementById("password").value;
-    var confirm = document.getElementById("confirm").value;
+    var confirm = document.getElementById("confirm").value; // Changed from confirmPass to confirm
     var errorElement = document.getElementById("error");
 
     if (firstname.trim() === '' || lastname.trim() === '' || firstname.length < 3 || lastname.length < 3) {
@@ -42,7 +42,7 @@ function validateForm() {
         return false;
     }
 
-    if (phoneNumber.trim() === '' || isNaN(phoneNumber)) {
+    if (number.trim() === '' || isNaN(number)) {
         errorElement.textContent = "Please enter a valid phone number.";
         return false;
     }
@@ -52,7 +52,7 @@ function validateForm() {
         return false;
     }
 
-    if (password !== confirmPass) {
+    if (password !== confirm) {
         errorElement.textContent = "Passwords do not match.";
         return false;
     }
